@@ -3,9 +3,9 @@ import logging
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
 
-from app.api.dependencies import get_memory_service
+from api.dependencies import get_memory_service
 from app.memory.memory_service import MemoryService
-from app.schemas.api_schemas import MemoryQueryRequest, MemoryRetainRequest
+from schemas.api_schemas import MemoryQueryRequest, MemoryRetainRequest
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/memory", tags=["Memory"])

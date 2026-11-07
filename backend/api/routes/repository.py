@@ -3,9 +3,9 @@ import logging
 import httpx
 from fastapi import APIRouter, Depends, HTTPException, Path
 
-from app.api.dependencies import get_github_client, get_repository_service
+from api.dependencies import get_github_client, get_repository_service
 from app.integrations.github.github_client import GitHubClient
-from app.schemas.api_schemas import RepositoryConnectRequest
+from schemas.api_schemas import RepositoryConnectRequest
 from app.services.repository_service import RepositoryService
 
 logger = logging.getLogger(__name__)

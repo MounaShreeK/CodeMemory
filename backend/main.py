@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import chat, health, memory, repository
+from api.routes import chat, health, memory, repository
 
 load_dotenv()
 

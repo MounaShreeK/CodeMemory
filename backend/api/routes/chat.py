@@ -5,8 +5,8 @@ import httpx
 from fastapi import APIRouter, Depends, HTTPException
 
 from app.agents.agent_orchestrator import AgentOrchestrator
-from app.api.dependencies import get_agent_orchestrator
-from app.schemas.api_schemas import ChatRequest, ChatResponse
+from api.dependencies import get_agent_orchestrator
+from schemas.api_schemas import ChatRequest, ChatResponse
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/chat", tags=["Chat"])
